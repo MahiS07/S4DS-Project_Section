@@ -99,7 +99,7 @@
             color: #9A69F5;
         }
         
-        /* Hero Section */
+        /* Hero Section - Fixed for Firefox */
         .hero {
             text-align: left;
             margin-bottom: 80px;
@@ -116,6 +116,12 @@
         
         .showcasing {
             margin-right: 10px;
+        }
+        
+        /* Fixed highlight structure for Firefox compatibility */
+        .highlight-wrapper {
+            position: relative;
+            display: inline-block;
         }
         
         .brilliance {
@@ -155,7 +161,6 @@
             color: white;
             position: relative;
             z-index: 2;
-            margin-right: 20px;
         }
         
         .projects-underline {
@@ -325,9 +330,6 @@
             font-weight: 600;
             cursor: pointer;
         }
-        /* .project-details .publish-link {
-            display: block;
-        } */
         
         /* Project Link Icon */
         .project-link-icon {
@@ -461,21 +463,25 @@
             </div>
         </header>
         
-        <!-- Hero Section -->
+        <!-- Hero Section - Fixed for Firefox -->
         <section class="hero">
             <div class="hero-main">
                 <span class="showcasing">SHOWCASING</span>
-                <span class="brilliance">BRILLIANCE
-                    <div class="brilliance-bg"></div>
+                <!-- Fixed structure for Firefox compatibility -->
+                <span class="highlight-wrapper">
+                    <span class="brilliance">BRILLIANCE</span>
+                    <span class="brilliance-bg"></span>
                 </span>
             </div>
             
             <div class="hero-sub">
                 <span class="the">THE</span>
-                <span class="projects-text">PROJECTS
-                    <div class="projects-underline"></div>
+                <!-- Fixed structure for Firefox compatibility -->
+                <span class="highlight-wrapper">
+                    <span class="projects-text">PROJECTS</span>
+                    <span class="projects-underline"></span>
                 </span>
-                <span class="that-defines">THAT DEFINES US!</span>
+                <span class="that-defines"> THAT DEFINES US!</span>
             </div>
         </section>
         
