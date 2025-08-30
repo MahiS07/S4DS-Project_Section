@@ -24,12 +24,23 @@
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
+            /* Add enough top padding for header height + top gap */
+            padding-top: 180px; /* Increased from 140px to 180px */
         }
         
         /* Header Styles */
         header {
-            position: relative;
-            margin-bottom: 80px;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 100%;
+            z-index: 100;
+            
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            border-radius: 0 0 12px 12px;
+            
         }
         
         .header-bg {
@@ -51,6 +62,7 @@
             height: 95px;
             top: 0;
             left: 0;
+            
         }
         
         .header-content {
@@ -62,6 +74,7 @@
             padding-right: 50px;
             margin-top: 10px;
             position: relative;
+            margin-top: -2px;
             z-index: 2;
         }
         
@@ -445,26 +458,25 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="header-bg header-bg-1"></div>
-            <div class="header-bg header-bg-2"></div>
-            
-            <div class="header-content">
-                <div class="logo">
-                    <img src="./s4ds-white.png" alt="S4DS Logo">
-                    <div class="logo-text">S4DS KJSIT</div>
-                </div>
-                
-                <nav>
-                    <a href="https://s4ds.kjsieit.in/index.html">Home</a>
-                    <a href="https://s4ds.kjsieit.in/teams.html">Team</a>
-                    <a href="https://s4ds.kjsieit.in/index.html#knowcode-community">Knowhow</a>
-                </nav>
-            </div>
-        </header>
+    <!-- Header OUTSIDE the container -->
+    <header>
+        <div class="header-bg header-bg-1"></div>
+        <div class="header-bg header-bg-2"></div>
         
+        <div class="header-content">
+            <div class="logo">
+                <img src="./s4ds-white.png" alt="S4DS Logo">
+                <div class="logo-text">S4DS KJSIT</div>
+            </div>
+            
+            <nav>
+                <a href="https://s4ds.kjsieit.in/index.html">Home</a>
+                <a href="https://s4ds.kjsieit.in/teams.html">Team</a>
+                <a href="https://s4ds.kjsieit.in/index.html#knowcode-community">Knowhow</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
         <!-- Hero Section - Fixed for Firefox -->
         <section class="hero">
             <div class="hero-main">
