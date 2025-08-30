@@ -314,9 +314,54 @@
             font-weight: 600;
             cursor: pointer;
         }
-        .project-details:hover .publish-link {
+        .project-details .publish-link {
             display: block;
         }
+        }
+        
+        /* Project Link Icon */
+        .project-link-icon {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .project-link-icon a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            background-color: #9A69F5; /* Default color */
+        }
+        
+        .project-link-icon a:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        
+        /* Specific colors for each project type */
+        .project-card:nth-child(1) .project-link-icon a,
+        .project-card:nth-child(4) .project-link-icon a {
+            background-color: #D26C3B; /* Orange */
+        }
+        
+        .project-card:nth-child(2) .project-link-icon a,
+        .project-card:nth-child(6) .project-link-icon a {
+            background-color: #9A69F5; /* Purple */
+        }
+        
+        .project-card:nth-child(3) .project-link-icon a,
+        .project-card:nth-child(5) .project-link-icon a {
+            background-color: #F3C246; /* Yellow */
+            color: #242020; /* Darker text for better contrast on yellow */
         }
         
         /* Footer */
@@ -434,8 +479,10 @@
                             <p>
                                 <span class="description-label">Description:</span>
                                 <span class="description-text">This project develops a multilingual, syllabus-based LLM that generates exam-type questions and answers with native-language explanations.</span>
-                                <a href="#" class="publish-link">Click Here</a>
                             </p>
+                            <div class="project-link-icon">
+                                <a href="#" title="View Project" style="background-color: #D26C3B;">🔗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -460,8 +507,10 @@
                             <p>
                                 <span class="description-label">Description:</span>
                                 <span class="description-text">An LLM-powered advisory system that suggests courses, colleges, and bridge programs with filters like location, fees, and eligibility.</span>
-                                <a href="#" class="publish-link">Click Here</a>
                             </p>
+                            <div class="project-link-icon">
+                                <a href="#" title="View Project">🔗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -486,8 +535,10 @@
                             <p>
                                 <span class="description-label">Description:</span>
                                 <span class="description-text">An AI assistant that gives quick hospital details, diagnostic info, and personalized health scheme recommendations with multilingual support.</span>
-                                <a href="#" class="publish-link">Click Here</a>
                             </p>
+                            <div class="project-link-icon">
+                                <a href="#" title="View Project" style="background-color: #F3C246;">🔗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -521,8 +572,10 @@
                             <p>
                                     <span class="description-label">Description:</span>
                                     <span class="description-text">This system will help aspirants save time, practice efficiently, and focus on areas of improvement, making preparation smarter, personalized, and more effective compared to conventional methods.</span>
-                                    <a href="#" class="publish-link">Click Here</a>
                             </p>
+                            <div class="project-link-icon">
+                                <a href="#" title="View Project" style="background-color: #F3C246;">🔗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -547,8 +600,10 @@
                             <p>
                                     <span class="description-label">Description:</span>
                                     <span class="description-text">Fingerprint extraction and analysis from hospital forms using SAM + TDA. Minutiae and persistence barcodes enable similarity matching, improving biometric identification for healthcare data.</span>
-                                    <a href="#" class="publish-link">Click Here</a>
                             </p>
+                            <div class="project-link-icon">
+                                <a href="#" title="View Project" style="background-color: #D26C3B;">🔗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -573,8 +628,10 @@
                             <p>
                                     <span class="description-label">Description:</span>
                                     <span class="description-text">Automated answer-sheet evaluation and ranking using Gemini 1.5 Pro for OCR and scoring. Provides consistent, objective results while reducing human error and bias.</span>
-                                    <a href="#" class="publish-link">Click Here</a>
                             </p>
+                            <div class="project-link-icon">
+                                <a href="#" title="View Project">🔗</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -582,7 +639,7 @@
         </div>
         
         <footer>
-            <p>© 2025 S4DS KJSIT - Showcasing Brilliance Through Projects</p>
+            <p> 2025 S4DS KJSIT - Showcasing Brilliance Through Projects</p>
         </footer>
     </div>
 </body>
